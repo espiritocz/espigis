@@ -1,0 +1,57 @@
+#!/home/espi/miniconda3/bin/python
+
+import sys, os
+from dusteelib import *
+
+
+def main():
+    datum = sys.argv[1]
+    #datum = '2019-08-20'
+    product_type = sys.argv[2]
+    #product_type = 'no2'
+
+    temppath = '/opt/home/espi/espigis/temp/'
+    outpath = '/opt/home/espi/espigis/data/'
+
+    os.chdir(temppath)
+    tiffile = str(datum)+'.tif'
+    tilesdir = product_type+'.'+datum
+
+    if os.path.exists(tiffile):
+        os.remove(tiffile)
+    #download and prepare NO2 data for given date
+    bb = s5down(datum, product_type)
+    if bb:
+        print('first step done')
+    else:
+        print('some error')
+        exit()
+    colorize_tif(tiffile)
+
+    #this will convert tif to mbtiles
+    gdal2tiles='gdal2tiles.py -s EPSG:4326 -r bilinear -z 6-9 -w none '+tiffile+' '+tilesdir
+    #gdal2tiles='gdal2tiles.py -r bilinear -z 6-9 -w none '+tiffile+' '+tilesdir
+    print(gdal2tiles)
+    os.system(gdal2tiles)
+    #update meta xml file:
+    #os.remove(tilesdir+'/tilemapresource.xml')
+    #copyfile('tilemapresource.xml', tilesdir+'/tilemapresource.xml')
+
+    #now to move it to the proper place
+    os.rename(tilesdir,outpath+tilesdir)
+
+    #do the git update
+    os.chdir(outpath)
+    os.system('rm -r no2')
+    os.rename(tilesdir,'no2')
+    with open('meta.no2','w') as f:
+        f.write("let textno2 = '{0}';".format(str(datum)))
+    os.chdir(outpath+'..')
+    os.system('git add .')
+    os.system('git commit -m "s5data {0}"'.format(str(datum)))
+    os.system('git push')
+    os.chdir(temppath)
+    print('all done, check webmap')
+
+if __name__ == '__main__':
+    main()
