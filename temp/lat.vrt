@@ -1,0 +1,776 @@
+<VRTDataset rasterXSize="450" rasterYSize="373">
+  <Metadata>
+    <MDI key="algorithm_version">1.4.0</MDI>
+    <MDI key="build_date">2022-02-25T09:02:00Z</MDI>
+    <MDI key="cdm_data_type">Swath</MDI>
+    <MDI key="Conventions">CF-1.7</MDI>
+    <MDI key="cpp_compiler_flags">-g -O2 -fPIC -std=c++11 -W -Wall -Wno-ignored-qualifiers -Wno-write-strings -Wno-unused-variable -Wno-unused-parameter -DTROPNLL2DP</MDI>
+    <MDI key="cpp_compiler_version">g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-11)</MDI>
+    <MDI key="creator_email">EOSupport@Copernicus.esa.int</MDI>
+    <MDI key="creator_name">The Sentinel 5 Precursor TROPOMI Level 2 products are developed with funding from the European Space Agency (ESA), the Netherlands Space Office (NSO), the Belgian Science Policy Office, the German Aerospace Center (DLR) and the Bayerisches Staatsministerium für Wirtschaft und Medien, Energie und Technologie (StMWi).</MDI>
+    <MDI key="creator_url">http://www.tropomi.eu https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-5p</MDI>
+    <MDI key="date_created">2022-10-04T12:49:54Z</MDI>
+    <MDI key="f90_compiler_flags">-gdwarf-3 -O2 -fPIC -cpp -ffpe-trap=invalid -fno-range-check -frecursive -fimplicit-none -ffree-line-length-none -DTROPNLL2DP -Wuninitialized -Wtabs</MDI>
+    <MDI key="f90_compiler_version">GNU Fortran (GCC) 4.8.5 20150623 (Red Hat 4.8.5-11)</MDI>
+    <MDI key="geolocation_grid_from_band">3 </MDI>
+    <MDI key="geospatial_lat_max">65.195305 </MDI>
+    <MDI key="geospatial_lat_min">40.574394 </MDI>
+    <MDI key="geospatial_lon_max">49.080952 </MDI>
+    <MDI key="geospatial_lon_min">0.71711034 </MDI>
+    <MDI key="history">2022-10-04 12:50:19 f_s5pops tropnll2dp /mnt/data1/storage_nrt/cache_nrt/WORKING-649926816/JobOrder.649926460.xml</MDI>
+    <MDI key="id">S5P_NRTI_L2__AER_AI_20221004T104908_20221004T105408_25779_03_020400_20221004T124953</MDI>
+    <MDI key="identifier_product_doi">N/A</MDI>
+    <MDI key="identifier_product_doi_authority">http://dx.doi.org/</MDI>
+    <MDI key="institution">KNMI</MDI>
+    <MDI key="keywords">0300 Atmospheric Composition and Structure; 0305 Aerosols and Particles; 0360 Radiation, Transmission and Scattering; 3311 Clouds and Aerosols; 3360 Remote Sensing</MDI>
+    <MDI key="keywords_vocabulary">AGU index terms, http://publications.agu.org/author-resource-center/index-terms/</MDI>
+    <MDI key="license">No conditions apply</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.algorithm_variant">1</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.n_pair">3</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_1.aai_add_offset">-1.05</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_1.delta_wavelength">2.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_1.id">TOMS_pair</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_1.min_wavelength">1</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_1.number_spectral_pixels">7</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_1.radiance_correction_factor_1">1.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_1.radiance_correction_factor_2">1.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_1.wavelength_1">340</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_1.wavelength_2">380</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_2.aai_add_offset">-0.85</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_2.delta_wavelength">2.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_2.id">OMI_pair</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_2.min_wavelength">1</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_2.number_spectral_pixels">7</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_2.radiance_correction_factor_1">1.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_2.radiance_correction_factor_2">1.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_2.wavelength_1">354</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_2.wavelength_2">388</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_3.aai_add_offset">-1.1</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_3.delta_wavelength">4.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_3.id">TOMS-EP_pair</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_3.min_wavelength">1</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_3.number_spectral_pixels">13</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_3.radiance_correction_factor_1">1.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_3.radiance_correction_factor_2">1.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_3.wavelength_1">335</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_algo.pair_3.wavelength_2">367</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_configuration.version.algorithm">1.4.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_configuration.version.framework">1.2.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_input.1.band">3</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_input.1.irrType">L1B_IR_UVN</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_input.1.type">L1B_RA_BD3</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_input.count">1</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_joborder.processing.threads">26</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.1.band">3</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.1.config">cfg/product/product.AER_AI.xml</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.1.type">L2__AER_AI</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.compressionLevel">3</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.count">1</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.histogram.aerosol_index_335_367.end">14</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.histogram.aerosol_index_335_367.start">-6</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.histogram.aerosol_index_340_380.end">14</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.histogram.aerosol_index_340_380.start">-6</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.histogram.aerosol_index_354_388.end">14</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.histogram.aerosol_index_354_388.start">-6</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.useCompression">true</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.useFletcher32">true</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_output.useShuffleFilter">true</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.algorithm">AER_AI</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.correct_surface_pressure_for_altitude">true</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.exclude_flags">4294967295</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.groupDem">DEM_RADIUS_05000</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.ignore_pixel_flags">False</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.radiancePixelsMinError">2</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.radiancePixelsMinWarning">7</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.signal_to_noise.test">yes</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.signal_to_noise.threshold">12</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.signal_to_noise.window.range">350.0, 355.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.szaMax">88.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.szaMin">0.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.vzaMax">78.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_processing.vzaMin">0.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.AAI_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.altitude_consistency_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.cloud_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.data_range_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.deconvolution_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.extrapolation_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.input_spectrum_warning">70.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.interpolation_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.low_cloud_fraction_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.pixel_level_input_data_missing">80.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.signal_to_noise_ratio_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.snow_ice_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.so2_volcanic_origin_certain_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.so2_volcanic_origin_likely_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.south_atlantic_anomaly_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.sun_glint_correction">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.sun_glint_warning">70.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.thermal_instability_warning">100.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_qa_value.wavelength_calibration_warning">90.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_quality_control.missing_input.max_fraction">0.25</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_quality_control.qa_value.limit">0.5</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_quality_control.success.min_fraction">0.001</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.convergence_threshold">1.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.include_stretch">no</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.initial_guess.a0">1.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.initial_guess.a1">0.1</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.initial_guess.a2">0.01</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.initial_guess.ring">0.06</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.initial_guess.shift">0.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.initial_guess.stretch">0.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.irr.include_ring">no</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.irr.max_iterations">20</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.irr.polynomial_order">2</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.max_iterations">12</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.perform_wavelength_fit">yes</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.rad.include_ring">yes</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.rad.polynomial_order">3</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.sigma.a0">1.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.sigma.a1">0.1</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.sigma.ring">0.06</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.sigma.shift">3.0</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.sigma.stretch">0.07</MDI>
+    <MDI key="METADATA_ALGORITHM_SETTINGS_wavelength_calibration.window">330.0, 390.0</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:acquisitionType=NOMINAL</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:doi=N/A</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:identifier=S5P_NRTI_L2__AER_AI_20221004T104908_20221004T105408_25779_03_020400_20221004T124953</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:parentIdentifier=urn:ogc:def:EOP:ESA:SENTINEL.S5P_TROP_L2__AER_AI</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:processing_eop:nativeProductFormat=netCDF-4</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:processing_eop:processingCenter=PDGS-OP</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:processing_eop:processingDate=2022-10-04</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:processing_eop:processingLevel=L2</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:processing_eop:processingMode=NRTI</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:processing_eop:processorName=TROPNLL2DP</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:processing_eop:processorVersion=2.4.0</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:processing_objectType=eop:ProcessingInformation</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:productQualityDegradationTag=NOT APPLICABLE</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:productQualityStatus=NOMINAL</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:productType=S5P_NRTI_AER_AI</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_eop:status=ACQUIRED</MDI>
+    <MDI key="METADATA_EOP_METADATA_eop">metaDataProperty_objectType=eop:EarthObservationMetaData</MDI>
+    <MDI key="METADATA_EOP_METADATA_gml">id=S5P_NRTI_L2__AER_AI_20221004T104908_20221004T105408_25779_03_020400_20221004T124953.ID</MDI>
+    <MDI key="METADATA_EOP_METADATA_objectType">atm:EarthObservation</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">featureOfInterest_eop:multiExtentOf_gml:surfaceMembers_gml:exterior_gml:posList=56.468056 0.71711034 55.29014 2.3994694 54.08841 3.9789975 52.865177 5.4638205 51.62243 6.8614297 50.361965 8.178788 49.085533 9.422504 47.794353 10.598001 46.490032 11.71112 45.17346 12.766286 43.8459 13.7684 42.508045 14.721065 41.160885 15.628167 40.574394 16.007885 40.622337 16.101023 41.484882 17.829227 42.814827 20.736868 43.59031 22.62536 44.238758 24.36999 44.676407 25.669422 45.078995 26.98688 45.37119 28.04202 45.65584 29.177544 45.87261 30.136154 46.074917 31.128424 46.092243 31.21876 46.26484 32.175957 46.44355 33.307686 46.585407 34.3564 46.7312 35.659714 46.84294 36.93488 46.947567 38.621845 47.010036 40.39973 47.02499 42.991318 46.940422 46.12056 46.7898 48.805313 48.23159 48.717087 49.67247 48.641582 51.112404 48.58048 52.55143 48.53484 53.98939 48.50638 55.426296 48.496635 56.862072 48.507946 58.2967 48.543312 59.72999 48.60541 61.1619 48.698 62.59231 48.82547 64.02105 48.993652 64.63963 49.08095 64.65671 48.89194 64.94424 45.085064 65.17466 39.320602 65.18718 35.649746 65.10099 32.35156 64.97568 29.970867 64.796104 27.634647 64.61521 25.825003 64.38519 23.941648 64.163826 22.40464 63.90981 20.86502 63.88547 20.727448 63.615562 19.296091 63.269142 17.665333 62.92309 16.21249 62.461464 14.482309 61.97826 12.866252 61.295235 10.836109 60.526833 8.816146 59.327927 6.0607715 57.768764 2.978993 56.468056 0.71711034 56.468056 0.71711034</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">featureOfInterest_eop:multiExtentOf_gml:surfaceMembers_gml:exterior_objectType=gml:LinearRing</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">featureOfInterest_eop:multiExtentOf_gml:surfaceMembers_objectType=gml:Polygon</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">featureOfInterest_eop:multiExtentOf_objectType=gml:MultiSurface</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">featureOfInterest_gml:id=S5P_NRTI_L2__AER_AI_20221004T104908_20221004T105408_25779_03_020400_20221004T124953.FP</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">featureOfInterest_objectType=eop:FootPrint</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">observedProperty_nilReason=inapplicable</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">phenomenonTime_gml:beginPosition=2022-10-04T10:49:02Z</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">phenomenonTime_gml:endPosition=2022-10-04T10:54:15Z</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">phenomenonTime_objectType=gml:TimePeriod</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">procedure_eop:acquisitionParameters_eop:orbitNumber=25779 </MDI>
+    <MDI key="METADATA_EOP_METADATA_om">procedure_eop:acquisitionParameters_objectType=eop:Acquisition</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">procedure_eop:instrument_eop:shortName=TROPOMI</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">procedure_eop:instrument_objectType=eop:Instrument</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">procedure_eop:platform_eop:shortName=Sentinel-5p</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">procedure_eop:platform_objectType=eop:Platform</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">procedure_eop:sensor_eop:sensorType=ATMOSPHERIC</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">procedure_eop:sensor_objectType=eop:Sensor</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">procedure_gml:id=S5P_NRTI_L2__AER_AI_20221004T104908_20221004T105408_25779_03_020400_20221004T124953.EOE</MDI>
+    <MDI key="METADATA_EOP_METADATA_om">procedure_objectType=eop:EarthObservationEquipment</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_File_Class">NRTI</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_File_Description">Aerosol index with a spatial resolution of 5.5x3.5 km2 observed at about 13:30 local solar time from spectra measured by TROPOMI</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_File_Name">S5P_NRTI_L2__AER_AI_20221004T104908_20221004T105408_25779_03_020400_20221004T124953</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_File_Type">L2__AER_AI</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_File_Version">1 </MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_Mission">S5P</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_Notes"></MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_objectType">Fixed_Header</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_source_Creation_Date">UTC=2022-10-04T12:49:54</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_source_Creator">TROPNLL2DP</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_source_Creator_Version">2.4.0</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_source_objectType">Source</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_source_System">PDGS-OP</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_validity_period_objectType">Validity_Period</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_validity_period_Validity_Start">UTC=2022-10-04T10:49:02</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_fixed_header_validity_period_Validity_Stop">UTC=2022-10-04T10:54:15</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_objectType">Earth_Explorer_Header</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:description=Processing of L1b to L2 AER_AI data for orbit 25779 using the KNMI processor version 2.4.0</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_gmd:description=Auxiliary ECMWF AUX_MET_2D Meteorological forecast data</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OFFL_AUX_MET_2D_20221004T030000_20221004T120000_20221004T000000.nc</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:title_gco:characterString=Auxiliary ECMWF AUX_MET_2D Meteorological forecast data</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_gmi:processedLevel_gmd:code=L4</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#1_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_gmd:description=Auxiliary AUX_O3___M reference data</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OPER_AUX_O3___M_00000000T000000_99999999T999999_20210119T232003.nc</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:title_gco:characterString=Auxiliary AUX_O3___M reference data</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_gmi:processedLevel_gmd:code=N/A</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#2_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_gmd:description=Processor CFG_AER_AI configuration file</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OPER_CFG_AER_AI_00000000T000000_99999999T999999_20220610T000000.cfg</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:title_gco:characterString=Processor CFG_AER_AI configuration file</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_gmi:processedLevel_gmd:code=N/A</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#3_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_gmd:description=TROPOMI L1B L1B_IR_UVN irradiance product</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OFFL_L1B_IR_UVN_20221003T150832_20221003T165001_25768_03_020100_20221003T183616.nc</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:title_gco:characterString=TROPOMI L1B L1B_IR_UVN irradiance product</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_gmi:processedLevel_gmd:code=L1B</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#4_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_gmd:description=TROPOMI L1B L1B_RA_BD3 radiance product</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_NRTI_L1B_RA_BD3_20221004T104902_20221004T105414_25779_03_020100_20221004T124441.nc</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:title_gco:characterString=TROPOMI L1B L1B_RA_BD3 radiance product</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_gmi:processedLevel_gmd:code=L1B</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#5_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_gmd:description=Auxiliary LUT_AAI___ algorithm lookup table</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OPER_LUT_AAI____00000000T000000_99999999T999999_20210216T175440.nc</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:title_gco:characterString=Auxiliary LUT_AAI___ algorithm lookup table</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_gmi:processedLevel_gmd:code=N/A</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#6_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_gmd:description=Auxiliary REF_DEM___ reference data</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OPER_REF_DEM____20190404T150000_99999999T999999_20190405T143622.nc</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:title_gco:characterString=Auxiliary REF_DEM___ reference data</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_gmi:processedLevel_gmd:code=N/A</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#7_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_gmd:description=Auxiliary REF_SOLAR_ reference data</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OPER_REF_SOLAR__00000000T000000_99999999T999999_20210107T132455.nc</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:title_gco:characterString=Auxiliary REF_SOLAR_ reference data</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_gmi:processedLevel_gmd:code=N/A</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmd:source#8_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmd:description=TROPOMI/S5P Aerosol Index 5-minute L2 Swath 5.5x3.5km</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:date_objectType=gmd:CI_DateTime</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:identifier_gmd:code=L2__AER_AI</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:identifier_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:title=S5P_NRTI_L2__AER_AI_20221004T104908_20221004T105408_25779_03_020400_20221004T124953</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmi:processedLevel_gmd:code=L2</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:output_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:date_gmd:date=2015-11-30</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:date_gmd:dateType_codeListValue=revision</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:title=TROPOMI ATBD of the UV aerosol index; S5P-KNMI-L2-0008-RP; release 1.0</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:date_gmd:date=2015-11-30</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:date_gmd:dateType_codeListValue=revision</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:title=Sentinel-5 precursor/TROPOMI Level 2 Product User Manual UV Aerosol Index; S5P-KNMI-L2-0026-MA; release 1.0</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:identifier_gmd:code=KNMI L2 AER_AI processor, version 2.4.0</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:identifier_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:date_gmd:date=2022-02-25T09:02:00Z</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:date_objectType=gmd:CI_DateTime</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:title=TROPNLL2DP processor</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:processingInformation_objectType=gmi:LE_Processing</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:report_gmi:description=Sentinel 5-precursor TROPOMI L1b processed to L2 data using the KNMI L2 AER_AI processor</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:report_gmi:fileType=netCDF-4</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:report_gmi:name=S5P_NRTI_L2__AER_AI_20221004T104908_20221004T105408_25779_03_020400_20221004T124953.nc</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_gmi:report_objectType=gmi:LE_ProcessStepReport</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:processStep_objectType=gmi:LE_ProcessStep</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_gmd:statement=L2 AER_AI dataset produced by PDGS-OP from the S5P/TROPOMI L1B product</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_gmd">lineage_objectType=gmd:LI_Lineage</MDI>
+    <MDI key="METADATA_ESA_METADATA_earth_explorer_header_variable_header_objectType">Variable_Header</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_CollectionIdentifier">03</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_GranuleEnd">2022-10-04T10:54:15Z</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_GranuleStart">2022-10-04T10:49:02Z</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_InstrumentName">TROPOMI</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_LongitudeOfDaysideNadirEquatorCrossing">9.96921e+36 </MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_MissionName">Sentinel-5 precursor</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_MissionShortName">S5P</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_ProcessingCenter">PDGS-OP</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_ProcessingMode">Near-realtime</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_ProcessingNode">s5p-ops2-nrt-pn09</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_ProcessLevel">2</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_ProcessorVersion">2.4.0</MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_ProductFormatVersion">10300 </MDI>
+    <MDI key="METADATA_GRANULE_DESCRIPTION_ProductShortName">L2__AER_AI</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">characterSet_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">characterSet_codeListValue=utf8</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">characterSet_objectType=gmd:MD_CharacterSetCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">contact_gmd:contactInfo_gmd:address_gmd:electronicMailAddress=EOSupport@copernicus.esa.int</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">contact_gmd:contactInfo_gmd:address_objectType=gmd:CI_Address</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">contact_gmd:contactInfo_objectType=gmd:CI_Contact</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">contact_gmd:organisationName=Copernicus Space Component Data Access System,  ESA, Services Coordinated Interface</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">contact_gmd:role_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">contact_gmd:role_codeListValue=pointOfContact</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">contact_gmd:role_objectType=gmd:CI_RoleCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">contact_objectType=gmd:CI_ResponsibleParty</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:description=Processing of L1b to L2 AER_AI data for orbit 25779 using the KNMI processor version 2.4.0</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_gmd:description=Auxiliary ECMWF AUX_MET_2D Meteorological forecast data</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OFFL_AUX_MET_2D_20221004T030000_20221004T120000_20221004T000000.nc</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_gmd:title_gco:characterString=Auxiliary ECMWF AUX_MET_2D Meteorological forecast data</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_gmi:processedLevel_gmd:code=L4</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#1_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_gmd:description=Auxiliary AUX_O3___M reference data</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OPER_AUX_O3___M_00000000T000000_99999999T999999_20210119T232003.nc</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_gmd:title_gco:characterString=Auxiliary AUX_O3___M reference data</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_gmi:processedLevel_gmd:code=N/A</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#2_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_gmd:description=Processor CFG_AER_AI configuration file</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OPER_CFG_AER_AI_00000000T000000_99999999T999999_20220610T000000.cfg</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_gmd:title_gco:characterString=Processor CFG_AER_AI configuration file</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_gmi:processedLevel_gmd:code=N/A</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#3_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_gmd:description=TROPOMI L1B L1B_IR_UVN irradiance product</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OFFL_L1B_IR_UVN_20221003T150832_20221003T165001_25768_03_020100_20221003T183616.nc</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_gmd:title_gco:characterString=TROPOMI L1B L1B_IR_UVN irradiance product</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_gmi:processedLevel_gmd:code=L1B</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#4_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_gmd:description=TROPOMI L1B L1B_RA_BD3 radiance product</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_NRTI_L1B_RA_BD3_20221004T104902_20221004T105414_25779_03_020100_20221004T124441.nc</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_gmd:title_gco:characterString=TROPOMI L1B L1B_RA_BD3 radiance product</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_gmi:processedLevel_gmd:code=L1B</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#5_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_gmd:description=Auxiliary LUT_AAI___ algorithm lookup table</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OPER_LUT_AAI____00000000T000000_99999999T999999_20210216T175440.nc</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_gmd:title_gco:characterString=Auxiliary LUT_AAI___ algorithm lookup table</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_gmi:processedLevel_gmd:code=N/A</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#6_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_gmd:description=Auxiliary REF_DEM___ reference data</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OPER_REF_DEM____20190404T150000_99999999T999999_20190405T143622.nc</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_gmd:title_gco:characterString=Auxiliary REF_DEM___ reference data</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_gmi:processedLevel_gmd:code=N/A</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#7_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_gmd:description=Auxiliary REF_SOLAR_ reference data</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:alternateTitle#1_gmx:FileName=S5P_OPER_REF_SOLAR__00000000T000000_99999999T999999_20210107T132455.nc</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04T12:50:19Z</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_gmd:title_gco:characterString=Auxiliary REF_SOLAR_ reference data</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_gmi:processedLevel_gmd:code=N/A</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmd:source#8_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmd:description=TROPOMI/S5P Aerosol Index 5-minute L2 Swath 5.5x3.5km</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:date_gmd:date=2022-10-04</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:date_objectType=gmd:CI_DateTime</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:identifier_gmd:code=L2__AER_AI</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:identifier_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmd:sourceCitation_gmd:title=S5P_NRTI_L2__AER_AI_20221004T104908_20221004T105408_25779_03_020400_20221004T124953</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmd:sourceCitation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmi:processedLevel_gmd:code=L2</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_gmi:processedLevel_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:output_objectType=gmi:LE_Source</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_doi=N/A</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:date_gmd:date=2015-11-30</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:date_gmd:dateType_codeListValue=revision</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_gmd:title=TROPOMI ATBD of the UV aerosol index; S5P-KNMI-L2-0008-RP; release 1.0</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#1_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_doi=N/A</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:date_gmd:date=2015-11-30</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:date_gmd:dateType_codeListValue=revision</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_gmd:title=Sentinel-5 precursor/TROPOMI Level 2 Product User Manual UV Aerosol Index; S5P-KNMI-L2-0026-MA; release 1.0</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:documentation#2_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:identifier_gmd:code=KNMI L2 AER_AI processor, version 2.4.0</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:identifier_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:date_gmd:date=2022-02-25T09:02:00Z</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:date_objectType=gmd:CI_DateTime</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_gmd:title=TROPNLL2DP processor</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_gmi:softwareReference_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:processingInformation_objectType=gmi:LE_Processing</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:report_gmi:description=Sentinel 5-precursor TROPOMI L1b processed to L2 data using the KNMI L2 AER_AI processor</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:report_gmi:fileType=netCDF-4</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:report_gmi:name=S5P_NRTI_L2__AER_AI_20221004T104908_20221004T105408_25779_03_020400_20221004T124953.nc</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_gmi:report_objectType=gmi:LE_ProcessStepReport</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:processStep_objectType=gmi:LE_ProcessStep</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_gmd:statement=L2 AER_AI dataset produced by PDGS-OP from the S5P/TROPOMI L1B product</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:lineage_objectType=gmd:LI_Lineage</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:report_gmd:result_gmd:explanation=INSPIRE Data specification for orthoimagery is not yet officially published so conformity has not yet been evaluated</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:report_gmd:result_gmd:pass=true</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:report_gmd:result_gmd:specification_gmd:date_gmd:date=2013-02-04</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:report_gmd:result_gmd:specification_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:report_gmd:result_gmd:specification_gmd:date_gmd:dateType_codeListValue=publication</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:report_gmd:result_gmd:specification_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:report_gmd:result_gmd:specification_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:report_gmd:result_gmd:specification_gmd:title=INSPIRE Data Specification on Orthoimagery - Guidelines, version 3.0rc3</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:report_gmd:result_gmd:specification_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:report_gmd:result_objectType=gmd:DQ_ConformanceResult</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:report_objectType=gmd:DQ_DomainConsistency</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:scope_gmd:level_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:scope_gmd:level_codeListValue=dataset</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:scope_gmd:level_objectType=gmd:MD_ScopeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_gmd:scope_objectType=gmd:DQ_Scope</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dataQualityInfo_objectType=gmd:DQ_DataQuality</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">dateStamp=2015-10-16</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">fileIdentifier=urn:ogc:def:EOP:ESA:SENTINEL.S5P_TROP_L2__AER_AI</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">hierarchyLevelName=EO Product Collection</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">hierarchyLevel_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_ScopeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">hierarchyLevel_codeListValue=series</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">hierarchyLevel_objectType=gmd:MD_ScopeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:abstract=Aerosol index with a spatial resolution of 5.5x3.5 km2 observed at about 13:30 local solar time from spectra measured by TROPOMI</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:characterSet_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_CharacterSetCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:characterSet_codeListValue=utf8</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:characterSet_objectType=gmd:MD_CharacterSetCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:citation_gmd:date_gmd:date=2022-10-04</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:citation_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:citation_gmd:date_gmd:dateType_codeListValue=creation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:citation_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:citation_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:citation_gmd:identifier_gmd:code=urn:ogc:def:EOP:ESA:SENTINEL.S5P_TROP_L2__AER_AI</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:citation_gmd:identifier_objectType=gmd:MD_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:citation_gmd:title=TROPOMI/S5P Aerosol Index 5-minute L2 Swath 5.5x3.5km</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:citation_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:credit=The Sentinel 5 Precursor TROPOMI Level 2 products are developed with funding from the European Space Agency (ESA), the Netherlands Space Office (NSO), the Belgian Science Policy Office, the German Aerospace Center (DLR) and the Bayerisches Staatsministerium für Wirtschaft und Medien, Energie und Technologie (StMWi).</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_gmd:keyword#1=Atmospheric conditions</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_gmd:thesaurusName_gmd:date_gmd:date=2008-06-01</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_gmd:thesaurusName_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_gmd:thesaurusName_gmd:date_gmd:dateType_codeListValue=publication</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_gmd:thesaurusName_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_gmd:thesaurusName_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_gmd:thesaurusName_gmd:title=GEMET - INSPIRE themes, version 1.0</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_gmd:thesaurusName_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_gmd:type_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_KeywordTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_gmd:type_codeListValue=theme</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_gmd:type_objectType=gmd:MD_KeywordTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#1_objectType=gmd:MD_Keywords</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#2_gmd:keyword#1=ultraviolet_aerosol_index</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#2_gmd:thesaurusName_gmd:date_gmd:date=2019-04-09</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#2_gmd:thesaurusName_gmd:date_gmd:dateType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#2_gmd:thesaurusName_gmd:date_gmd:dateType_codeListValue=publication</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#2_gmd:thesaurusName_gmd:date_gmd:dateType_objectType=gmd:CI_DateTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#2_gmd:thesaurusName_gmd:date_objectType=gmd:CI_Date</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#2_gmd:thesaurusName_gmd:title=CF Standard Name Table v65</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#2_gmd:thesaurusName_objectType=gmd:CI_Citation</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#2_gmd:thesaurusName_xlink:href=http://cfconventions.org/standard-names.html</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:descriptiveKeywords#2_objectType=gmd:MD_Keywords</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:extent_gmd:geographicElement_gmd:eastBoundLongitude=49.080952 </MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:extent_gmd:geographicElement_gmd:extentTypeCode=true</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:extent_gmd:geographicElement_gmd:northBoundLatitude=65.195305 </MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:extent_gmd:geographicElement_gmd:southBoundLatitude=40.574394 </MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:extent_gmd:geographicElement_gmd:westBoundLongitude=0.71711034 </MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:extent_gmd:geographicElement_objectType=gmd:EX_GeographicBoundingBox</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:extent_gmd:temporalElement_gmd:extent_gml:beginPosition=2022-10-04T10:49:02Z</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:extent_gmd:temporalElement_gmd:extent_gml:endPosition=2022-10-04T10:54:15Z</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:extent_gmd:temporalElement_gmd:extent_objectType=gml:TimePeriod</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:extent_gmd:temporalElement_objectType=gmd:EX_TemporalExtent</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:extent_objectType=gmd:EX_Extent</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:language=eng</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:pointOfContact_gmd:contactInfo_gmd:address_gmd:electronicMailAddress=EOSupport@copernicus.esa.int</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:pointOfContact_gmd:contactInfo_gmd:address_objectType=gmd:CI_Address</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:pointOfContact_gmd:contactInfo_objectType=gmd:CI_Contact</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:pointOfContact_gmd:organisationName=Copernicus Space Component Data Access System,  ESA, Services Coordinated Interface</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:pointOfContact_gmd:role_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:pointOfContact_gmd:role_codeListValue=distributor</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:pointOfContact_gmd:role_objectType=gmd:CI_RoleCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:pointOfContact_objectType=gmd:CI_ResponsibleParty</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:resourceConstraints_gmd:accessConstraints_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_RestrictionCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:resourceConstraints_gmd:accessConstraints_codeListValue=copyright</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:resourceConstraints_gmd:accessConstraints_objectType=gmd:MD_RestrictionCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:resourceConstraints_gmd:useLimitation=no conditions apply</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:resourceConstraints_objectType=gmd:MD_LegalConstraints</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:spatialRepresentationType_codeList=http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_SpatialRepresentationTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:spatialRepresentationType_codeListValue=grid</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:spatialRepresentationType_objectType=gmd:MD_SpatialRepresentationTypeCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_gmd:topicCategory=climatologyMeteorologyAtmosphere</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">identificationInfo_objectType=gmd:MD_DataIdentification</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">language_codeList=http://www.loc.gov/standards/iso639-2/</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">language_codeListValue=eng</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">language_objectType=gmd:LanguageCode</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">metadataStandardName=ISO 19115-2 Geographic Information - Metadata Part 2 Extensions for imagery and gridded data</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmd">metadataStandardVersion=ISO 19115-2:2009(E), S5P profile</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmi">acquisitionInformation_gmi:platform_gmi:description=Sentinel 5 Precursor</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmi">acquisitionInformation_gmi:platform_gmi:identifier_gmd:code=S5P</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmi">acquisitionInformation_gmi:platform_gmi:identifier_gmd:codeSpace=http://www.esa.int/</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmi">acquisitionInformation_gmi:platform_gmi:identifier_objectType=gmd:RS_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmi">acquisitionInformation_gmi:platform_gmi:instrument_gmi:identifier_gmd:code=TROPOMI</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmi">acquisitionInformation_gmi:platform_gmi:instrument_gmi:identifier_gmd:codeSpace=http://www.esa.int/</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmi">acquisitionInformation_gmi:platform_gmi:instrument_gmi:identifier_objectType=gmd:RS_Identifier</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmi">acquisitionInformation_gmi:platform_gmi:instrument_gmi:type=UV-VIS-NIR-SWIR imaging spectrometer</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmi">acquisitionInformation_gmi:platform_gmi:instrument_objectType=gmi:MI_Instrument</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmi">acquisitionInformation_gmi:platform_objectType=gmi:MI_Platform</MDI>
+    <MDI key="METADATA_ISO_METADATA_gmi">acquisitionInformation_objectType=gmi:MI_AcquisitionInformation</MDI>
+    <MDI key="METADATA_ISO_METADATA_objectType">gmi:MI_Metadata</MDI>
+    <MDI key="METADATA_QA_STATISTICS_global_processing_warnings">None</MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_aai_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_aai_scene_albedo_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_AAI_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_abort_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_aerosol_boundary_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_airmass_factor_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_altitude_consistency_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_altitude_consistency_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_altitude_roughness_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_aot_lower_boundary_convergence_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_assertion_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_boundary_hit_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cf_viirs_nir_ifov_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cf_viirs_nir_ofova_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cf_viirs_nir_ofovb_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cf_viirs_nir_ofovc_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cf_viirs_swir_ifov_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cf_viirs_swir_ofova_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cf_viirs_swir_ofovb_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cf_viirs_swir_ofovc_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_ch4_noscat_ratio_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_ch4_noscat_ratio_std_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_ch4_noscat_zero_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_chi2_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cirrus_reflectance_viirs_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cloud_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cloud_filter_convergence_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cloud_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cloud_fraction_fresco_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cloud_fraction_viirs_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cloud_inhomogeneity_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cloud_pressure_spread_too_low_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cloud_retrieval_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cloud_too_low_level_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_cloud_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_configuration_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_convergence_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_coregistration_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_data_range_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_deconvolution_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_dfs_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_diff_psurf_fresco_ecmwf_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_diff_refl_cirrus_viirs_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_extrapolation_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_failed_retrievals">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_generic_exception_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_generic_range_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_geographic_region_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_geolocation_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_groundpixels">167850 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_ground_pixels_with_warnings">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_h2o_noscat_ratio_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_h2o_noscat_ratio_std_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_h2o_noscat_zero_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_high_sza_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_initialization_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_input_spectrum_alignment_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_input_spectrum_missing_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_input_spectrum_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_interpolation_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_io_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_irradiance_missing_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_ISRF_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_key_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_ler_range_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_low_cloud_fraction_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_lut_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_lut_range_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_max_iteration_convergence_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_max_num_outlier_exceeded_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_max_optical_thickness_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_memory_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_missing_scanlines">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_mixed_surface_type_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_model_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_number_of_input_data_points_too_low_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_numerical_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_ocean_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_optimal_estimation_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_other_boundary_convergence_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_ozone_range_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_pixel_level_input_data_missing_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_pixel_or_scanline_index_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_processed_pixels">167850 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_profile_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_psurf_fresco_stdv_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_radiance_missing_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_radiative_transfer_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_reflectance_range_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_refl_cirrus_viirs_nir_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_refl_cirrus_viirs_swir_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_rejected_pixels_not_enough_spectrum">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_saturation_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_saturation_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_signal_to_noise_ratio_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_signal_to_noise_ratio_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_slant_column_density_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_small_pixel_radiance_std_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_snow_ice_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_snow_ice_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_snr_range_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_so2_volcanic_origin_certain_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_so2_volcanic_origin_likely_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_solar_eclipse_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_south_atlantic_anomaly_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_successfully_processed_pixels">167850 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_sun_glint_correction_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_sun_glint_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_sun_glint_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_svd_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_sza_range_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_thermal_instability_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_time_range_filter_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_vertical_column_density_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_vza_range_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_wavelength_calibration_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_wavelength_calibration_warning_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_wavelength_offset_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_number_of_wrong_input_type_error_occurrences">0 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_time_for_algorithm_initialization">7.445236 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_time_for_processing">16.272867 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_time_per_pixel">0.00248008109025922 </MDI>
+    <MDI key="METADATA_QA_STATISTICS_time_standard_deviation_per_pixel">2.61704052509908e-06 </MDI>
+    <MDI key="naming_authority">nl.knmi</MDI>
+    <MDI key="orbit">25779 </MDI>
+    <MDI key="platform">S5P</MDI>
+    <MDI key="processing_status">Nominal</MDI>
+    <MDI key="processor_version">2.4.0</MDI>
+    <MDI key="product_version">1.3.0</MDI>
+    <MDI key="project">Sentinel 5 precursor/TROPOMI</MDI>
+    <MDI key="references">http://www.tropomi.eu/data-products/aerosol-index https://sentinels.copernicus.eu/web/sentinel/technical-guides/sentinel-5p/products-algorithms</MDI>
+    <MDI key="revision_control_identifier">eb97f82fb328</MDI>
+    <MDI key="sensor">TROPOMI</MDI>
+    <MDI key="source">Sentinel 5 precursor, TROPOMI, space-borne remote sensing, L2</MDI>
+    <MDI key="spatial_resolution">5.5x3.5 km2</MDI>
+    <MDI key="standard_name_vocabulary">NetCDF Climate and Forecast Metadata Conventions Standard Name Table (v29, 08 July 2015), http://cfconventions.org/standard-names.html</MDI>
+    <MDI key="Status_MET_2D">Nominal</MDI>
+    <MDI key="summary">TROPOMI/S5P Aerosol Index 5-minute L2 Swath 5.5x3.5km</MDI>
+    <MDI key="time_coverage_duration">PT312.473S</MDI>
+    <MDI key="time_coverage_end">2022-10-04T10:54:15Z</MDI>
+    <MDI key="time_coverage_resolution">PT0.840S</MDI>
+    <MDI key="time_coverage_start">2022-10-04T10:49:02Z</MDI>
+    <MDI key="time_reference">2022-10-04T00:00:00Z</MDI>
+    <MDI key="time_reference_days_since_1950">26574 </MDI>
+    <MDI key="time_reference_julian_day">2459856.5 </MDI>
+    <MDI key="time_reference_seconds_since_1970">1664841600 </MDI>
+    <MDI key="title">TROPOMI/S5P Aerosol Index 5-minute L2 Swath 5.5x3.5km</MDI>
+    <MDI key="tracking_id">04f35866-94da-4e52-be7f-dda440132764</MDI>
+  </Metadata>
+  <VRTRasterBand dataType="Float32" band="1">
+    <Metadata>
+      <MDI key="PRODUCT_latitude_bounds">/PRODUCT/SUPPORT_DATA/GEOLOCATIONS/latitude_bounds</MDI>
+      <MDI key="PRODUCT_latitude_long_name">pixel center latitude</MDI>
+      <MDI key="PRODUCT_latitude_standard_name">latitude</MDI>
+      <MDI key="PRODUCT_latitude_units">degrees_north</MDI>
+      <MDI key="PRODUCT_latitude_valid_max">90 </MDI>
+      <MDI key="PRODUCT_latitude_valid_min">-90 </MDI>
+      <MDI key="PRODUCT_latitude__FillValue">9.96921e+36 </MDI>
+      <MDI key="PRODUCT_latitude__Netcdf4Dimid">3 </MDI>
+    </Metadata>
+    <NoDataValue>9.969209968386869e+36</NoDataValue>
+    <SimpleSource>
+      <SourceFilename relativeToVRT="1">HDF5:./S5P_NRTI_L2__AER_AI_20221004T104908_20221004T105408_25779_03_020400_20221004T124953.zip://PRODUCT/latitude</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="450" RasterYSize="373" DataType="Float32" BlockXSize="450" BlockYSize="373" />
+      <SrcRect xOff="0" yOff="0" xSize="450" ySize="373" />
+      <DstRect xOff="0" yOff="0" xSize="450" ySize="373" />
+    </SimpleSource>
+  </VRTRasterBand>
+</VRTDataset>

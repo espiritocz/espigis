@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+            <title>dustee</title>
+
+            <!-- Leaflet -->
+	    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+	 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+		<!-- CDN -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://npmcdn.com/geotiff@0.3.6/dist/geotiff.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.0/chroma.min.js"></script>
+    <script src="https://ihcantabria.github.io/Leaflet.CanvasLayer.Field/dist/leaflet.canvaslayer.field.js"></script>
+    <!-- <script src="lib/leaflet-idw.js"> </script> -->
+            <style>
+				#map { width: 800px; height: 500px; }
+                body { margin:0; padding:0; }
+                body, table, tr, td, th, div, h1, h2, input { font-family: "Calibri", "Trebuchet MS", "Ubuntu", Serif; font-size: 11pt; }
+                .ctl {
+                    padding: 2px 10px 2px 10px;
+                    background: white;
+                    background: rgba(255,255,255,0.9);
+                    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                    border-radius: 5px;
+                    text-align: right;
+                }
+                .title {
+                    font-size: 18pt;
+                    font-weight: bold;
+                }
+                .src {
+                    font-size: 10pt;
+                }
+				.legend {
+					text-align: left;
+					line-height: 18px;
+					width: 90px;
+					color: #555;
+				}
+				.legend i {
+					width: 14px;
+					height: 14px;
+					float: left;
+					margin-right: 8px;
+					opacity: 0.7;
+				}
+
+				.info {
+					padding: 6px 8px;
+					font: 12px/14px Arial, Helvetica, sans-serif;
+					background: white;
+					background: rgba(255,255,255,0.8);
+					box-shadow: 0 0 15px rgba(0,0,0,0.2);
+					border-radius: 5px;
+				}
+				.info h4 {
+					margin: 0 0 5px;
+					color: #777;
+				}
+            </style>
+
+        </head>
+        <body>
+
+        <div id="map" style="width: 800px; height: 500px;"></div>
+	<script src="data/meta.no2"></script>
+	<script src="data/meta.aerosols"></script>
+	<script src="data/meta.pm10-24"></script>
+	<script src="data/dustee.pm10"></script>
+	<!--  <script src="data/meteo.pm10-24"></script> -->
+        <script>
+        /* **** Leaflet **** */
+        
+        // these function and 'grades' should be pollutor specific.
+        // this was prepared for NO2...
+		function getColor(d) {
+		    return d > 5000 ? '#b2182b' :
+		           d > 4400  ? '#d6604d' :
+		           d > 3750  ? '#f4a582' :
+		           d > 3100  ? '#fddbc7' :
+		           d > 2500   ? '#d1e5f0' :
+		           d > 1250   ? '#4393c3' :
+		           d > 600   ? '#2166ac' :
+		                      '#053061';
+		};
+		
+		let grades = [0, 600, 1250, 2500, 3100, 3750, 4400, 5000];
+		
+        // Base layers
+        //  .. OpenStreetMap
+        var osm = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'});
+		var mapbox_sat = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+			attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+				'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+				'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+			id: 'mapbox.satellite'
+		});
+
+        // Overlay layers (TMS)
+        var s5no2 = L.tileLayer('data/no2/{z}/{x}/{y}.png', {tms: true, opacity: 0.4, attribution: "(c)2019 Milan Lazecky pro dustee", minZoom: 6, maxZoom: 9});
+        var s5sol = L.tileLayer('data/aerosols/{z}/{x}/{y}.png', {tms: true, opacity: 0.4, attribution: "(c)2019 Milan Lazecky pro dustee", minZoom: 6, maxZoom: 9});
+        var meteo_pm1024 = L.tileLayer('data/pm10-24/{z}/{x}/{y}.png', {tms: true, opacity: 0.4, attribution: "(c)2019 Milan Lazecky pro dustee", minZoom: 6, maxZoom: 15});
+
+
+		// main Map
+        var map = L.map('map', {
+            center: [49.64444467891838, 15.669143802785019],
+            zoom: 9,
+            minZoom: 6,
+            maxZoom: 15,
+            layers: [osm, s5no2]
+        });
+        map.setView([49.64444467891838, 15.669143802785019], 6);
+        
+        // info boxes
+        var info = L.control();
+		info.onAdd = function (map) {
+			this._div = L.DomUtil.create('div', 'info');
+			this.update();
+			return this._div;
+		};
+		
+		info.update = function (props) {
+			this._div.innerHTML = '<h4>dustee</h4>' +  (props ?
+				'<b>' + props.name + '</b><br />' + props.density + ' mol / cm<sup>2</sup>'
+				: 'valid for ' + textno2);
+		};
+		
+		info.addTo(map);
+	
+		//Legend
+        var legend = L.control({position: 'bottomright'});
+        legend.onAdd = function (map) {
+
+				var div = L.DomUtil.create('div', 'info legend'),
+				//will get grades using script meta.no2
+//					let grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+					labels = [],
+					title = 'NO<sub>2</sub> [mol/m<sup>2</sup>]<br />',
+					from, to;
+			
+				// loop through our density intervals and generate a label with a colored square for each interval
+				for (var i = 0; i < grades.length; i++) {
+					from = grades[i];
+					to = grades[i + 1];
+					
+					labels.push(
+						'<i style="background:' + getColor(from + 1) + '"></i> ' +
+						from + (to ? '&ndash;' + to : '+'));
+					}
+
+				div.innerHTML = title + labels.join('<br>');
+				return div;
+			};
+		legend.addTo(map);
+        
+        //including dustee measurements
+        for (var i=0; i<dusteePoints.length; i++) {
+			var id = dusteePoints[i][0];
+			var adresa = dusteePoints[i][1];
+			var mesto = 'Kroměříž';
+            var lat = dusteePoints[i][2];
+            var lon = dusteePoints[i][3];
+        //    var popupText = 'PM10: ' + dusteePoints[i][2] + ' mol/cm2';
+            var popupText = '<b>address:</b> ' + adresa + ', ' + mesto + '<br /> <b>PM1:</b> N/A<br /> <b>PM2.5:</b> N/A<br /> <b>PM10:</b> N/A<br /> <b>t:</b> N/A<br /> <b>H:</b> N/A';
+             var markerLocation = new L.LatLng(lat, lon);
+             var marker = new L.Marker(markerLocation).bindPopup(popupText).addTo(map);        
+         
+        };
+        //for test only   meteopoints_pm10-24 
+        //var meteolayer = L.layerGroup();
+        //for (var i=0; i<meteopoints_pm1024.length; i++) {
+        //    var lat = meteopoints_pm1024[i][0];
+        //    var lon = meteopoints_pm1024[i][1];
+        //    var popupText = 'PM10-24: ' + meteopoints_pm1024[i][2] + ' microgram/m<sup>3</sup>';
+        //    var markerLocation = new L.LatLng(lat, lon);
+        //    var marker = new L.Marker(markerLocation).bindPopup(popupText);        
+        //    meteolayer.addLayer(marker);
+        // };
+
+
+
+
+		// Interpolated layer from PM10 measurements
+
+		//var idw_pm1024 = L.idwLayer(pm10_24,{
+        //    opacity: 0.4,
+        //    //maxZoom: 18,
+        //    cellSize: 2,
+        //    exp: 3,
+        //    //gradient: {0.4: 'blue', 0.65: 'lime', 1: 'red'},
+        //    max: 10
+        //   });
+
+        // Title
+//        var title = L.control();
+//       title.onAdd = function(map) {
+//           this._div = L.DomUtil.create('div', 'ctl title');
+//            this.update();
+//            return this._div;
+//        };
+//        title.update = function(props) {
+//            this._div.innerHTML = textno2;
+//        };
+//        title.addTo(map);
+		
+        // Note
+        //var src = 'NO2 hodnoty 0-0.5 mol/cm-2, Aerosol: -1,1';
+        //var title = L.control({position: 'bottomleft'});
+        //title.onAdd = function(map) {
+        //    this._div = L.DomUtil.create('div', 'ctl src');
+        //    this.update();
+        //    return this._div;
+        //};
+        //title.update = function(props) {
+        //    this._div.innerHTML = src;
+        //};
+        //title.addTo(map);
+
+		// Values from NO2 layer
+		//getting values on map click
+		d3.request("data/no2.tif").responseType('arraybuffer').get(
+		
+            function (error, tiffData) {
+                let hodnota = L.ScalarField.fromGeoTIFF(tiffData.response);
+
+                let clickableNO2 = L.canvasLayer.scalarField(hodnota, {
+                    opacity: 0
+                }).addTo(map);
+
+                clickableNO2.on('click', function (e) {
+                    if (e.value !== null) {
+                        let v = e.value.toFixed(2);
+                        let html = (`<span class="popupText">NO<sub>2</sub>  ${v} mol/cm<sup>2</sup></span>`);
+                        let popup = L.popup()
+                            .setLatLng(e.latlng)
+                            .setContent(html)
+                            .openOn(map);
+                    }
+                });
+                //map.fitBounds(layer.getBounds());
+        		d3.request("data/no2.tif").responseType('arraybuffer').get(
+		
+           function (error, tiffData) {
+                let hodnota = L.ScalarField.fromGeoTIFF(tiffData.response);
+
+                let clickableNO2 = L.canvasLayer.scalarField(hodnota, {
+                    opacity: 0
+                }).addTo(map);
+
+                clickableNO2.on('click', function (e) {
+                    if (e.value !== null) {
+                        let v = e.value.toFixed(2);
+                        let html = (`<span class="popupText">NO<sub>2</sub>  ${v} mol/cm<sup>2</sup></span>`);
+                        let popup = L.popup()
+                            .setLatLng(e.latlng)
+                            .setContent(html)
+                            .openOn(map);
+                    }
+                });
+                //map.fitBounds(layer.getBounds()); 
+        //the main controls... now under this d3.request
+        var basemaps = {"OpenStreetMaps": osm, "MapBoxSat": mapbox_sat}
+        // var overlaymaps = {"meteo PM10-24 body": meteolayer, "int. PM10-24 (20-40 microgr/m3)": meteo_pm1024, "test klikání (jen NO2)": clickableNO2, "Sentinel-5P NO2": s5no2, "Sentinel-5P Aerosol": s5sol}
+        var overlaymaps = {"test klikání (jen NO2)": clickableNO2, "Sentinel-5P NO2": s5no2, "Sentinel-5P Aerosol": s5sol}
+        // Add base layers
+        L.control.layers(basemaps, overlaymaps, {collapsed: false, position: 'bottomleft'}).addTo(map);
+            
+            
+            });
+        
+
+
+
+        </script>
+
+        </body>
+        </html>
+
+        
